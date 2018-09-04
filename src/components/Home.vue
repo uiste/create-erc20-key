@@ -3,8 +3,8 @@
         <div class="vux-demo">
             <h2>数字钱包</h2>
         </div>
-        <group title="cell demo">
-            <cell title="VUX" value="cool" is-link></cell>
+        <group>
+            <cell title="UISTE" value="数字钱包"></cell>
         </group>
         <tabbar>
             <tabbar-item link="/wallet/home">

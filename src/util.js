@@ -10,8 +10,8 @@ var hdPath = "m/44'";
 export default {
     install(Vue, options) {
         Vue.prototype.getHttpProvider = function() {
-            // return 'http://118.89.233.54:7545'
-            return 'https://mainnet.infura.io/JHFpXnQ8wCmgwB4ySWyY'
+            return 'HTTP://127.0.0.1:9545'
+            // return 'https://mainnet.infura.io/JHFpXnQ8wCmgwB4ySWyY'
         }
         Vue.prototype.getWallets = function() {
             if (!window.localStorage) {

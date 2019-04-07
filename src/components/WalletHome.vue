@@ -3,7 +3,7 @@
     <div class="vux-demo">
       <h1>数字钱包</h1>
     </div>
-    <group v-for="wallet in getWallets()">
+    <group v-for="wallet in getWallets">
       <card :header="{title: '钱包：' + wallet.name }">
         <p slot="content" class="card-padding" style="margin:10px;" @click="routerTo(wallet.name)">
           地址：{{sliceAddr(wallet.address)}}
@@ -46,6 +46,7 @@ export default {
   },
   data() {
     return {
+      coins: this.getWallets()
       // note: changing this line won't causes changes
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
